@@ -4,14 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles.css" />
-    <title>HTML Basics</title>
+    <title>Basics of HTML</title>
   </head>
 
   <body>
     <nav id="navbar">
-      <header>HTML Basics</header>
+      <header>Content</header>
       <ul>
-        <li><a class="nav-link" href="#intro">What is Html?</a></li>
+        <li><a class="nav-link" href="#intro">What is HTML?</a></li>
         <li><a class="nav-link" href="#html-element">Anatomy of an HTML Element</a></li>
         <li><a class="nav-link" href="#nesting">Nesting and Identation</a></li>
         <li><a class="nav-link" href="#empty-elements">Empty Elements</a></li>
@@ -23,10 +23,10 @@
       </ul>
     </nav>
     
-    <header><h1>HTML Basics</h1></header>
     <main id="main-doc">
+      <header><h1>Basics of HTML</h1></header>
       <section id="intro" class="main-section">
-        <header><h2>What is Html?</h2></header>
+        <header><h2>What is HTML?</h2></header>
         <p>HTML is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on. For example, take the following line of content:</p>
         <code>
           &lt;p&gt;This is a paragraph wrapped by paragraph tags.&lt;/p&gt;
@@ -75,19 +75,19 @@
       <section id="html-document" class="main-section">
         <header><h2>Anatomy of an HTML Document</h2></header>
         <p>That wraps up the basics of individual HTML elements, but they aren't handy on their own. Now we'll look at how individual elements are combined to form an entire HTML page. Let's have look at basic boilerplate of an html file:</p>
-        <code>
-          &lt;!DOCTYPE html&gt;<br>
-              &lt;html lang="en-US"&gt;<br>
-                &lt;head&gt;<br>
-                  &lt;meta charset="utf-8"&gt;<br>
-                  &lt;meta name="viewport" content="width=device-width"&gt;<br>
-                  &lt;title&gt;My test page&lt;/title&gt;<br>
-                &lt;/head&gt;<br>
-                &lt;body&gt;<br>
-                  &lt;img src="images/firefox-icon.png" alt="My test image"&gt;<br>
-                  &lt;/body&gt;<br>
-              &lt;/html&gt;
-        </code>
+          <code>
+            <div>&lt;!DOCTYPE html&gt;</div>
+            <div>&lt;html lang="en-US"&gt;</div>
+            <div class="space1">&lt;head&gt;</div>
+            <div class="space2">&lt;meta charset="utf-8"&gt;</div>
+            <div class="space2">&lt;meta name="viewport" content="width=device-width"&gt;</div>
+            <div class="space2">&lt;title&gt;My test page&lt;/title&gt;</div>
+            <div class="space1">&lt;/head&gt;</div>
+            <div class="space1">&lt;body&gt;</div>
+            <div class="space3">&lt;img src="images/firefox-icon.png" alt="My test image"&gt;</div>
+            <div class="space1">&lt;/body&gt;</div>
+            <div>&lt;/html&gt;</div>
+          </code>
         <p>Here, we have the following:</p>
         <ol>
           <li>&lt;!DOCTYPE html&gt; — doctype. It is a required preamble. In the mists of time, when HTML was young (around 1991/92), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. However these days, they don't do much and are basically just needed to make sure your document behaves correctly. That's all you need to know for now.</li>
@@ -106,11 +106,11 @@
         <h3>Headings</h3>
           <p>Heading elements allow you to specify that certain parts of your content are headings — or subheadings. In the same way that a book has the main title, chapter titles, and subtitles, an HTML document can too. HTML contains 6 heading levels, &lt;h1&gt; - &lt;h6&gt;, although you'll commonly only use 3 to 4 at most:</p>
           <code>
-            &lt;!-- 4 heading levels: --&gt;<br>
-            &lt;h1&gt;My main title&lt;/h1&gt;<br>
-            &lt;h2&gt;My top level heading&lt;/h2&gt;<br>
-            &lt;h3&gt;My subheading&lt;/h3&gt;<br>
-            &lt;h4&gt;My sub-subheading&lt;/h4&gt;
+            <div>&lt;!-- 4 heading levels: --&gt;</div>
+            <div>&lt;h1&gt;My main title&lt;/h1&gt;</div>
+            <div>&lt;h2&gt;My top level heading&lt;/h2&gt;</div>
+            <div>&lt;h3&gt;My subheading&lt;/h3&gt</div>
+            <div>&lt;h4&gt;My sub-subheading&lt;/h4&gt;</div>
           </code>
           <p>Note: Anything in HTML between <!-- and --> is an HTML comment. The browser ignores comments as it renders the code. In other words, they are not visible on the page - just in the code. HTML comments are a way for you to write helpful notes about your code or logic.</p>
           <p>Note: You'll see that your heading level 1 has an implicit style. Don't use heading elements to make text bigger or bold, because they are used for accessibility and other reasons such as SEO. Try to create a meaningful sequence of headings on your pages, without skipping levels.</p>
@@ -130,13 +130,13 @@
           <p>Each item inside the lists is put inside an &lt;li&gt; (list item) element.</p>
           <p>For example</p>
           <code>
-            &lt;p&gt;At Mozilla, we're a global community of&lt;/p&gt;<br>
-            &lt;ul&gt;<br>
-            &lt;li&gt;technologists&lt;/li&gt;<br>
-            &lt;li&gt;thinkers&lt;/li&gt;<br>
-            &lt;li&gt;builders&lt;/li&gt;<br>
-            &lt;/ul&gt;<br>
-            &lt;p&gt;working together...&lt;/p&gt;
+            <div>&lt;p&gt;At Mozilla, we're a global community of&lt;/p&gt;</div>
+            <div>&lt;ul&gt;</div>
+            <div class="space1">&lt;li&gt;technologists&lt;/li&gt;</div>
+            <div class="space1">&lt;li&gt;thinkers&lt;/li&gt;</div>
+            <div class="space1">&lt;li&gt;builders&lt;/li&gt;</div>
+            <div>&lt;/ul&gt;</div>
+            <div>&lt;p&gt;working together...&lt;/p&gt;</div>
           </code>
         </section>
 
@@ -178,7 +178,7 @@
     </main>
     
     <footer>
-      <p>This website only created for practicing and for the content all the credit goes to <a href="https://developer.mozilla.org/en-US/">Mozilla</a> </p>
+      <p>This website only created for practicing and for the content all the credit goes to <a id="mozilla" href="https://developer.mozilla.org/en-US/">Mozilla</a> </p>
     </footer>
   </body>
 
